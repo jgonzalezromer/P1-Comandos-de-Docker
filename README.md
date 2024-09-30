@@ -3,7 +3,7 @@
 
 
 # 1. Descargar e comprobar que unha imaxe está no teu equipo.
-# Para descargar unha imaxe utilizaremos o comando "docker pull <Nome da imaxe>", neste caso utilizei a imaxe de nginx.
+# Para descargar unha imaxe utilizaremos o comando "docker pull {Nome da imaxe}", neste caso utilizei a imaxe de nginx.
 # Para comprobar que unha imaxe está no meu equipo utilizarei o comando "docker images".
 
 # 2. Crear un contenedor sen nome, queda arrincado?, cómo obtés o nome?
@@ -35,7 +35,7 @@
 # Para ver canta RAM ocupan os contenedores teremos que por o comando "docker stats" tendo contenedores iniciados. Neste caso estarián utilizando dous contenedores ao redor de 0.1% de memoria RAM.
 
 # 9. Cómo fixeches para clonar o repositorio
-# Para clonar un repositorio utilizamos o comando "git clone <DireccionDoRepositorio>"
+# Para clonar un repositorio utilizamos o comando "git clone {DireccionDoRepositorio}"
 
 # 10. Cómo engades o arquivo readme2.md
 # Para engadir o arquico readme2.md primeiro teremos que crealo eu neste caso o fixen co comando "echo "Texto" > readme2.md", isto dentro do directorio do repositorio que terá o mesmo nome.
