@@ -22,7 +22,7 @@
 # 5. Crea un contenedor coo nome 'bono', pódes facer ping entre os contenedores?
 # Para crear o contenedor utilizamos o comando "docker run -d --name bono nginx".
 # Se temos o problema que non temos estas utilidades deberemolas descargar cos comandos "apt update", "apt install -y iputils-ping" e "apt install -y net-tools".
-# Para facer o ping entre os contenedores utilizaremos o comando "ping <IP do outro contenedor>", estos se comunican sempre e cando estan na mesma rede.
+# Para facer o ping entre os contenedores utilizaremos o comando "ping {IP do outro contenedor}", estos se comunican sempre e cando estan na mesma rede.
 
 
 # 6. Se pechas as terminales, qué pasa coo contenedor?
