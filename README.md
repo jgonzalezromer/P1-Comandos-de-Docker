@@ -7,7 +7,7 @@ Para comprobar que una imagen está en el equipo, se utiliza el comando `docker 
 ## 2. Crear un contenedor sin nombre, ¿queda arrancado?, ¿cómo obtienes el nombre?
 Para arrancar un contenedor sin nombre utilizamos el comando `docker run -d nginx`.  
 Sí, queda arrancado ya que Docker le asigna un nombre aleatorio automáticamente.  
-Para conocer el nombre, se puede ver con el comando `docker ps -a` y revisar la columna de los nombres de los contenedores, que por defecto está a la derecha. También puede verse en Visual Studio Code al colocar el cursor sobre el contenedor.
+Para conocer el nombre, se puede ver con el comando `docker ps -a` y revisar la columna de los nombres de los contenedores. También puede verse en Visual Studio Code al colocar el cursor sobre el contenedor.
 
 ## 3. Crear un contenedor con el nombre 'u1', ¿cómo accedes a él?
 Para crear el contenedor utilizamos el comando `docker run -d --name u1 nginx`.  
