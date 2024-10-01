@@ -1,51 +1,51 @@
 # P1-Comandos-de-Docker
 
-## 1. Descargar y comprobar que una imagen está en tu equipo
-Para descargar una imagen utilizaremos el comando `docker pull {Nombre de la imagen}`, en este caso se utiliza la imagen de nginx.  
-Para comprobar que una imagen está en el equipo, se utiliza el comando `docker images`.
+## 1. Descargar e comprobar que unha imaxe está no teu equipo
+Para descargar unha imaxe utilizaremos o comando `docker pull {Nome da imaxe}`, neste caso úsase a imaxe de nginx.  
+Para comprobar que unha imaxe está no equipo, utilízase o comando `docker images`.
 
-## 2. Crear un contenedor sin nombre, ¿queda arrancado?, ¿cómo obtienes el nombre?
-Para arrancar un contenedor sin nombre utilizamos el comando `docker run -d nginx`.  
-Sí, queda arrancado ya que Docker le asigna un nombre aleatorio automáticamente.  
-Para conocer el nombre, se puede ver con el comando `docker ps -a` y revisar la columna de los nombres de los contenedores. También puede verse en Visual Studio Code al colocar el cursor sobre el contenedor.
+## 2. Crear un contedor sen nome, ¿queda arrancado?, ¿como obtés o nome?
+Para arrancar un contedor sen nome utilizamos o comando `docker run -d nginx`.  
+Si, queda arrancado xa que Docker asígnalle un nome aleatorio automaticamente.  
+Para coñecer o nome, pódese ver co comando `docker ps -a` e revisar a columna dos nomes dos contedores. Tamén pode verse en Visual Studio Code ao colocar o cursor sobre o contedor.
 
-## 3. Crear un contenedor con el nombre 'u1', ¿cómo accedes a él?
-Para crear el contenedor utilizamos el comando `docker run -d --name u1 nginx`.  
-Para acceder a él, podemos utilizar el comando `docker exec -it u1 /bin/bash` o hacer clic derecho sobre el contenedor y seleccionar **Attach Shell**.
+## 3. Crear un contedor co nome 'u1', ¿como accedes a el?
+Para crear o contedor utilizamos o comando `docker run -d --name u1 nginx`.  
+Para acceder a el, podemos utilizar o comando `docker exec -it u1 /bin/bash` ou facer clic dereito sobre o contedor e seleccionar **Attach Shell**.
 
-## 4. Comprobar su IP y hacer ping a google.com
-Para comprobar su IP utilizamos el comando `ifconfig` y para hacer ping, `ping google.com`.  
-Si no tenemos estas utilidades, debemos instalarlas con los comandos `apt update`, `apt install -y iputils-ping` y `apt install -y net-tools`.
+## 4. Comprobar a súa IP e facer ping a google.com
+Para comprobar a súa IP utilizamos o comando `ifconfig` e para facer ping, `ping google.com`.  
+Se non temos estas utilidades, debemos instalalas cos comandos `apt update`, `apt install -y iputils-ping` e `apt install -y net-tools`.
 
-## 5. Crear un contenedor con el nombre 'bono', ¿puedes hacer ping entre los contenedores?
-Para crear el contenedor utilizamos el comando `docker run -d --name bono nginx`.  
-Si faltan las utilidades, debemos instalarlas con `apt update`, `apt install -y iputils-ping` y `apt install -y net-tools`.  
-Para hacer ping entre los contenedores utilizamos el comando `ping {IP del otro contenedor}`, estos se comunican si están en la misma red.
+## 5. Crear un contedor co nome 'bono', ¿podes facer ping entre os contedores?
+Para crear o contedor utilizamos o comando `docker run -d --name bono nginx`.  
+Se faltan as utilidades, debemos instalalas con `apt update`, `apt install -y iputils-ping` e `apt install -y net-tools`.  
+Para facer ping entre os contedores utilizamos o comando `ping {IP do outro contedor}`, estes comunícanse se están na mesma rede.
 
-## 6. ¿Qué pasa con el contenedor si cierras las terminales?
-Si cerramos las terminales, los contenedores seguirán en segundo plano. Para comprobarlo, podemos utilizar el comando `docker ps`.
+## 6. ¿Que pasa co contedor se pechas as terminais?
+Se pechamos as terminais, os contedores seguirán en segundo plano. Para comprobalo, podemos utilizar o comando `docker ps`.
 
-## 7. ¿Cuánto espacio en disco ocupaste? Usa Docker para calcularlo
-Para ver cuánto espacio en disco hemos utilizado, ejecutamos el comando `docker system df`. En este caso, se han utilizado aproximadamente 458.6 MB.
+## 7. ¿Canto espazo en disco ocupaches? Usa Docker para calculalo
+Para ver canto espazo en disco utilizamos, executamos o comando `docker system df`. Neste caso, utilizáronse aproximadamente 458.6 MB.
 
-## 8. ¿Cuánta RAM ocupan los contenedores? Crea varios para calcularlo
-Para ver cuánta RAM ocupan los contenedores, utilizamos el comando `docker stats` con contenedores en ejecución. En este caso, dos contenedores están utilizando alrededor de 0.1% de la memoria RAM.
+## 8. ¿Canta RAM ocupan os contedores? Crea varios para calculalo
+Para ver canta RAM ocupan os contedores, utilizamos o comando `docker stats` con contedores en execución. Neste caso, dous contedores están utilizando ao redor do 0.1% da memoria RAM.
 
-## 9. ¿Cómo clonaste el repositorio?
-Para clonar un repositorio utilizamos el comando `git clone {DirecciónDelRepositorio}`.
+## 9. ¿Como clonaches o repositorio?
+Para clonar un repositorio utilizamos o comando `git clone {DirecciónDoRepositorio}`.
 
-## 10. ¿Cómo añadiste el archivo readme2.md?
-Para añadir el archivo `readme2.md`, primero lo creamos con el comando `echo "Texto" > readme2.md`, dentro del directorio del repositorio.  
-Para añadirlo, utilizamos el comando `git add -A readme2.md`.
+## 10. ¿Como engadiches o ficheiro readme2.md?
+Para engadir o ficheiro `readme2.md`, primeiro creámolo co comando `echo "Texto" > readme2.md`, dentro do directorio do repositorio.  
+Para engadilo, utilizamos o comando `git add -A readme2.md`.
 
-## 11. Pasos a seguir para subir el archivo que estás editando y el archivo readme2.md
-Después de realizar el paso anterior, utilizamos el comando `git commit -m "Texto para saber qué se actualizó"`.  
-Finalmente, utilizamos el comando `git push` para subir los cambios al repositorio. Como solo hay una rama, no es necesario especificar a qué rama enviarlos.
+## 11. Pasos a seguir para subir o ficheiro que estás a editar e o ficheiro readme2.md
+Despois de realizar o paso anterior, utilizamos o comando `git commit -m "Texto para saber que se actualizou"`.  
+Finalmente, utilizamos o comando `git push` para subir os cambios ao repositorio. Como só hai unha rama, non é necesario especificar a cal rama envialos.
 
-## 12. ¿Cómo comprobarías que existen diferencias entre tu repositorio local y el remoto?
-Para ver las diferencias entre el repositorio local y el remoto, utilizamos el comando `git diff origin/main`.
+## 12. ¿Como comprobarías que existen diferenzas entre o teu repositorio local e o remoto?
+Para ver as diferenzas entre o repositorio local e o remoto, utilizamos o comando `git diff origin/main`.
 
 ---
 
-Si se desea ver de una forma gráfica, este documento se puede acompañar con el siguiente [enlace a Google Docs](https://docs.google.com/document/d/1n1eWJ78NX0vyJ95x-zQEwg3JVdBDc_Ndeg7THFZmB7Q/edit?usp=sharing)
-, donde se encuentran imágenes del proceso en orden:  
+Se se desexa ver dunha forma gráfica, este documento pódese acompañar co seguinte [enlace a Google Docs](https://docs.google.com/document/d/1n1eWJ78NX0vyJ95x-zQEwg3JVdBDc_Ndeg7THFZmB7Q/edit?usp=sharing), onde se atopan imaxes do proceso en orde.
+
