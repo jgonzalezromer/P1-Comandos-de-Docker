@@ -1,6 +1,6 @@
-# **P1-Comandos-de-Docker**
+# P1-Comandos-de-Docker
 
-## **1. Descargar y comprobar que una imagen está en tu equipo**
+## 1. Descargar y comprobar que una imagen está en tu equipo
 Para descargar una imagen utilizaremos el comando `docker pull {Nombre de la imagen}`, en este caso se utiliza la imagen de nginx.  
 Para comprobar que una imagen está en el equipo, se utiliza el comando `docker images`.
 
