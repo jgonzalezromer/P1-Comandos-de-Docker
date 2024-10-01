@@ -47,5 +47,5 @@ Para ver las diferencias entre el repositorio local y el remoto, utilizamos el c
 
 ---
 
-Si se desea ver de una forma gráfica, este documento se puede acompañar con el siguiente [enlace a Google Docs], donde se encuentran imágenes del proceso en orden:  
-(https://docs.google.com/document/d/1n1eWJ78NX0vyJ95x-zQEwg3JVdBDc_Ndeg7THFZmB7Q/edit?usp=sharing)
+Si se desea ver de una forma gráfica, este documento se puede acompañar con el siguiente [enlace a Google Docs] (https://docs.google.com/document/d/1n1eWJ78NX0vyJ95x-zQEwg3JVdBDc_Ndeg7THFZmB7Q/edit?usp=sharing)
+, donde se encuentran imágenes del proceso en orden:  
