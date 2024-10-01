@@ -2,20 +2,20 @@
 
 
 
-# 1. Descargar e comprobar que unha imaxe está no teu equipo.
+## 1. Descargar e comprobar que unha imaxe está no teu equipo.
 # Para descargar unha imaxe utilizaremos o comando "docker pull {Nome da imaxe}", neste caso utilizei a imaxe de nginx.
 # Para comprobar que unha imaxe está no meu equipo utilizarei o comando "docker images".
 
-# 2. Crear un contenedor sen nome, queda arrincado?, cómo obtés o nome?
+## 2. Crear un contenedor sen nome, queda arrincado?, cómo obtés o nome?
 # Para arrincar un contenedor sen nome utilizamos o comando "docker run -d nginx".
 # Si queda arrincado xa que docker ponlle un nome aleatorio de forma automática.
 # Para poder saber o seu nome poderemos velo co comando "docker ps -a" e fixarnos na columna dos nomes dos contenedores, por defecto esta a dereita de todo. Tamén poderemos velo se estamos utilizando Visual Studio Code poñendo o rato encima do contendor.
 
-# 3. Crea un contenedor coo nome 'u1', cómo accedes a el?
+## 3. Crea un contenedor coo nome 'u1', cómo accedes a el?
 # Para crear o contenedor utilizamos o comnado "docker run -d --name u1 nginx".
 # Para acceder a él poderemos utilizar o comando "docker exec -it u1 /bin/bash" ou dandolle click dereito encima do contendor e clicando en Attach Shell.
 
-# 4. Comproba a súa ip e fai ping a google.com
+## 4. Comproba a súa ip e fai ping a google.com
 # Para comprobar a sua ip utilizamos o comando "ifconfig" e para facer ping "ping google.com".
 # Se temos o problema que non temos estas utilidades deberemolas descargar cos comandos "apt update", "apt install -y iputils-ping" e "apt install -y net-tools".
 
