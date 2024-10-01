@@ -3,8 +3,8 @@
 
 
 ## 1. Descargar e comprobar que unha imaxe está no teu equipo.
-# Para descargar unha imaxe utilizaremos o comando "docker pull {Nome da imaxe}", neste caso utilizei a imaxe de nginx.
-# Para comprobar que unha imaxe está no meu equipo utilizarei o comando "docker images".
+ Para descargar unha imaxe utilizaremos o comando "docker pull {Nome da imaxe}", neste caso utilizei a imaxe de nginx.
+ Para comprobar que unha imaxe está no meu equipo utilizarei o comando "docker images".
 
 ## 2. Crear un contenedor sen nome, queda arrincado?, cómo obtés o nome?
 # Para arrincar un contenedor sen nome utilizamos o comando "docker run -d nginx".
