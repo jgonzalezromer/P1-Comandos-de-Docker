@@ -10,7 +10,7 @@ Si, queda arrancado xa que Docker asígnalle un nome aleatorio automaticamente.
 Para coñecer o nome, pódese ver co comando `docker ps -a` e revisar a columna dos nomes dos contedores. Tamén pode verse en Visual Studio Code ao colocar o cursor sobre o contedor.
 
 ## 3. Crear un contedor co nome 'u1', ¿como accedes a el?
-Para crear o contedor utilizamos o comando `docker run -d --name u1 nginx`.  
+Para crear o contedor `#0969DA` utilizamos o comando `docker run -d --name u1 nginx`.  
 Para acceder a el, podemos utilizar o comando `docker exec -it u1 /bin/bash` ou facer clic dereito sobre o contedor e seleccionar **Attach Shell**.
 
 ## 4. Comprobar a súa IP e facer ping a google.com
