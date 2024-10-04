@@ -11,7 +11,9 @@ Para coñecer o nome, pódese ver co comando `docker ps -a` e revisar a columna 
 
 ## 3. Crear un contedor co nome 'u1', ¿como accedes a el?
 Para crear o contedor utilizamos o comando:
-```docker run -d --name u1 nginx```
+
+``` docker run -d --name u1 nginx ```
+
 Para acceder a el, podemos utilizar o comando `docker exec -it u1 /bin/bash` ou facer clic dereito sobre o contedor e seleccionar **Attach Shell**.
 
 ## 4. Comprobar a súa IP e facer ping a google.com
